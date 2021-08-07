@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap');
+
+*,*::after,*::before
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Lemonada', cursive;
+    font-size: 16px;
+}
+
+.hero
+{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(138, 43, 226,0.4);
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.h1
+{
+    background-color: salmon;
+}
+
+.video-bg
+{
+    background-color: brown;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}

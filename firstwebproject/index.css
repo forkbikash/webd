@@ -1,0 +1,73 @@
+body
+{
+    font-size: 1.125rem;
+    color: #707070;
+}
+
+.columns
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+.container
+{
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+h1
+{
+    font-size: 3rem;
+    text-align: center;
+    color: #212614;
+}
+
+h2
+{
+    font-size: 1.5rem;
+}
+
+h1 span
+{
+    color: #b7832f
+}
+
+.col:last-child
+{
+    background-color: #212614;
+    padding: .5em;
+}
+
+.col-1
+{
+    width: 20%;
+}
+
+.col-2
+{
+    width: 45%;
+}
+
+.col-3
+{
+    width: 70%;
+}
+
+@media screen and (max-width: 500px)
+{
+    .columns
+    {
+        flex-direction: column;
+    }
+    .col-1,.col-2,.col-3
+    {
+        width: 100%;
+    }
+}

@@ -1,0 +1,23 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+
+body
+{
+    line-height: 1.8;
+    font-family: monospace;
+}
+
+.image-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset
+{
+    cursor: pointer;
+}

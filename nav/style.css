@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap');
+
+:root
+{
+    --nav-background: rgb(214, 165, 75);
+    --nav-text-color: whitesmoke;
+}
+
+*,*::before,*::after
+{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Lemonada', cursive;
+    font-size: 16px;
+}
+
+.first-section
+{
+    width: 100%;
+    padding: 60px;
+    background-color: var(--nav-background);
+}
+
+.second-section
+{
+    width: 100%;
+    padding: 60px;
+    background-color: whitesmoke;
+}
+
+/*** position sticky used in .nav below ***/
+.nav
+{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: var(--nav-background);
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+    letter-spacing: 1px;
+}
+
+.nav .a
+{
+    text-decoration: none;
+    color: var(--nav-text-color);
+}
+
+.nav > .ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.burger
+{
+    display: none;
+}
+
+.nav .a:hover
+{
+    color: rgb(214, 54, 54);
+}
+
+.burger:hover
+{
+    background-color: rgb(184, 120, 2);
+}
+
+.dropdown
+{
+    position: relative;
+}
+
+.dropdown .ul
+{
+    position: absolute;
+    background-color: rgb(110, 106, 106);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30vh;
+    align-items: center;
+    justify-content: space-around;
+    display: none;
+}
+
+.dropdown .a:focus + ul
+{
+    display: flex;
+}
+
+@media screen and (max-width: 760px)
+{
+    .nav > .ul
+    {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+        background-color: rgb(245, 175, 46);
+        width: 50%;
+        height: 93vh;
+        top: 7vh;
+        left: 0px;
+        display: none;
+    }
+    .burger
+    {
+        display: block;
+        width: 35px;
+        cursor: pointer;
+    }
+    .burger .line
+    {
+        border: 1px solid var(--nav-text-color);
+        margin: 6px;
+        border-radius: 100px;
+    }
+    .nav
+    {
+        justify-content: flex-start;
+        column-gap: 50px;
+    }
+}

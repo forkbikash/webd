@@ -1,0 +1,80 @@
+:root
+{
+    --btn-background: transparent;
+    --btn-color: white;
+}
+
+*,*::after,*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.buttons .btn
+{
+    color: var(--btn-color);
+    background-color: var(--btn-background);
+    padding: 3px;
+    outline: none;
+    position: absolute;
+    border: white solid 2px;
+    cursor: pointer;
+}
+
+.btn-prev
+{
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+.btn-next
+{
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.carousel
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.slide
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.slide1
+{
+    background: url('https://source.unsplash.com/random/800x800') no-repeat center center/cover;
+}
+
+.slide2
+{
+    background: url('https://source.unsplash.com/daily') no-repeat center center/cover;
+}
+
+.slide3
+{
+    background: url('https://source.unsplash.com/user/erondu/daily') no-repeat center center/cover;
+}
+
+.current-slide
+{
+    opacity: 1;
+}

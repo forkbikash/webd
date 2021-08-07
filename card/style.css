@@ -1,0 +1,92 @@
+*,*::after,*::before
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 50px;
+}
+
+.profile-image
+{
+    border-radius: 50%;
+}
+
+.link
+{
+    color: rgb(18, 116, 214);
+    text-decoration: none;
+}
+
+.social-links
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.card
+{
+    width: 80%;
+    max-width: 600px;
+    background-color: violet;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    box-shadow: 0px 0px 15px rgba(255,0,0,0.3);
+}
+
+.profile-sidebar
+{
+    width: 40%;
+    text-align: center;
+}
+
+.profile-main
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.profile-name
+{
+    text-transform: uppercase;
+}
+
+.profile-designation
+{
+    letter-spacing: 4px;
+}
+
+@media screen and (max-width: 650px)
+{
+    .card
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .profile-main
+    {
+        margin-top: 1em;
+        width: 90%;
+    }
+    .social-links
+    {
+        margin-top: 3px;
+    }
+    .profile-designation
+    {
+        margin: 10px;
+    }
+}

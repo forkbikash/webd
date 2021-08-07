@@ -1,0 +1,49 @@
+*,*::after,*::before
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.text1, .text2, .text3
+{
+    width: 100%;
+    height: 40vh;
+    background-color: mediumturquoise;
+}
+
+.image1, .image2, .image3
+{
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.image1
+{
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/random/800x800');
+}
+
+.image2, .image3
+{
+    height: 40vh;
+}
+
+.image2
+{
+    background-image: url('https://source.unsplash.com/daily');
+}
+
+.image3
+{
+    background-image: url('https://source.unsplash.com/user/erondu/daily');
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>image-editor</title>
+    </head>
+
+    <body>
+        <form class="controls-form">
+            <label for="">grayscale</label>
+            <input class="grayscale" value="0" type="range">
+            <label for="">blur</label>
+            <input class="blur" value="0" type="range">
+            <label for="">hue-rotate</label>
+            <input class="hue-rotate" value="0" type="range">
+            <label for="">sepia</label>
+            <input class="sepia" value="0" type="range">
+            <button class="reset" type="reset">reset</button>
+        </form>
+        <section class="image-section">
+            <img class="image" src="https://source.unsplash.com/random/600x600" alt="">
+        </section>
+        <script src="script.js"></script>
+    </body>
+
+</html>

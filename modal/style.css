@@ -1,0 +1,50 @@
+:root
+{
+    /*variables*/
+}
+
+*,*::after,*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.btn
+{
+    color: white;
+    background: rgb(7, 173, 57);
+    cursor: pointer;
+    outline: none;
+    border: greenyellow solid 2px;
+    padding: 10px;
+}
+
+.btn:focus + .modal-container
+{
+    display: initial;
+}
+
+.modal-container
+{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.modal
+{
+    background: white;
+    width: 50%;
+    margin: auto;
+}
